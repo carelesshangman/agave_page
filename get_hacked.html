@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HACKED BY AGAVE 🌿💀</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000;
+            color: #0f0;
+            font-family: 'Courier New', monospace;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .matrix-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            opacity: 0.1;
+            pointer-events: none;
+        }
+
+        .glitch {
+            animation: glitch 1s infinite;
+        }
+
+        @keyframes glitch {
+            0% {
+                text-shadow: 2px 2px #f00, -2px -2px #0ff;
+            }
+            25% {
+                text-shadow: -2px 2px #f00, 2px -2px #0ff;
+            }
+            50% {
+                text-shadow: 2px -2px #f00, -2px 2px #0ff;
+            }
+            75% {
+                text-shadow: -2px -2px #f00, 2px 2px #0ff;
+            }
+            100% {
+                text-shadow: 2px 2px #f00, -2px -2px #0ff;
+            }
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .skull-header {
+            text-align: center;
+            font-size: 4rem;
+            margin: 2rem 0;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin: 1rem 0;
+            color: #f00;
+            text-shadow: 0 0 10px #f00, 0 0 20px #f00;
+        }
+
+        .terminal {
+            background: rgba(0, 20, 0, 0.9);
+            border: 2px solid #0f0;
+            border-radius: 5px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+        }
+
+        .terminal-header {
+            color: #0f0;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .terminal-text {
+            line-height: 1.8;
+            color: #0f0;
+        }
+
+        .blink {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+
+        .warning {
+            background: rgba(255, 0, 0, 0.1);
+            border: 2px solid #f00;
+            border-radius: 5px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+        }
+
+        .warning h2 {
+            color: #f00;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 10px #f00;
+        }
+
+        .code-block {
+            background: rgba(0, 50, 0, 0.5);
+            border-left: 3px solid #0f0;
+            padding: 1rem;
+            margin: 1rem 0;
+            overflow-x: auto;
+        }
+
+        .highlight {
+            color: #ff0;
+            font-weight: bold;
+            text-shadow: 0 0 5px #ff0;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: #0ff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border: 2px solid #0ff;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            transition: all 0.3s;
+            text-shadow: 0 0 10px #0ff;
+        }
+
+        .back-link:hover {
+            background: rgba(0, 255, 255, 0.2);
+            box-shadow: 0 0 20px #0ff;
+        }
+
+        .security-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .security-list li {
+            margin: 1rem 0;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        .security-list li:before {
+            content: "🔒";
+            position: absolute;
+            left: 0;
+        }
+
+        .ascii-art {
+            text-align: center;
+            color: #0f0;
+            font-size: 0.8rem;
+            line-height: 1;
+            margin: 2rem 0;
+            text-shadow: 0 0 5px #0f0;
+        }
+
+        .footer-link {
+            text-align: center;
+            margin: 3rem 0 2rem;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        .scanline {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: rgba(0, 255, 0, 0.3);
+            animation: scan 4s linear infinite;
+            z-index: 999;
+            pointer-events: none;
+        }
+
+        @keyframes scan {
+            0% { top: 0; }
+            100% { top: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="scanline"></div>
+    <canvas class="matrix-bg" id="matrix"></canvas>
+
+    <div class="container">
+        <div class="skull-header">💀🌿💀</div>
+        <h1 class="glitch">YOU'VE BEEN HACKED</h1>
+        <div class="ascii-art">
+    _____ _____ _____ _____ _____
+   |  _  |   __|  _  |  |  |   __|
+   |     |  |  |     |  |  |   __|
+   |__|__|_____|__|__|\___/|_____|
+        </div>
+
+        <div class="warning">
+            <h2>⚠️ JUST KIDDING ⚠️</h2>
+            <p style="color: #0f0; font-size: 1.2rem;">You can't actually get hacked by our extension 😎</p>
+        </div>
+
+        <div class="terminal">
+            <div class="terminal-header">> ACCESSING MAINFRAME...<span class="blink">_</span></div>
+            <div class="terminal-text">
+                <p>> Initializing hacking sequence... <span class="highlight">FAILED</span></p>
+                <p>> Attempting to steal cookies... <span class="highlight">BLOCKED</span></p>
+                <p>> Trying to access your bank account... <span class="highlight">IMPOSSIBLE</span></p>
+                <p>> Reading your browsing history... <span class="highlight">NOPE</span></p>
+                <p>> Installing malware... <span class="highlight">NOT HAPPENING</span></p>
+                <p style="margin-top: 1rem; color: #ff0;">> ERROR: Extension too wholesome to hack anything 🌿</p>
+            </div>
+        </div>
+
+        <div class="terminal">
+            <h2 style="color: #0ff; margin-bottom: 1rem;">Why You're Actually Safe:</h2>
+            <ul class="security-list">
+                <li><span class="highlight">Open Source:</span> All our code is public on GitHub. No secrets, no sneaky stuff.</li>
+                <li><span class="highlight">No External Servers:</span> Everything runs locally on your machine. We literally can't send your data anywhere.</li>
+                <li><span class="highlight">Minimal Permissions:</span> We only ask for permissions we actually need (activeTab, storage).</li>
+                <li><span class="highlight">No Tracking:</span> We don't track you, analyze you, or profile you. Your data is YOURS.</li>
+                <li><span class="highlight">User Consent:</span> We only redirect when YOU click on a creator. No sneaky background redirects.</li>
+                <li><span class="highlight">Chrome Web Store Compliant:</span> Follows all of Google's strict security policies.</li>
+                <li><span class="highlight">Local Storage Only:</span> Your affiliate history stays on YOUR computer.</li>
+            </ul>
+        </div>
+
+        <div class="code-block">
+            <p style="color: #0ff; margin-bottom: 0.5rem;">// Actual code from our extension:</p>
+            <p style="color: #0f0;">const hackYourData = () => {</p>
+            <p style="color: #0f0; padding-left: 2rem;">return "Just kidding, we'd never do that! 🌿";</p>
+            <p style="color: #0f0;">};</p>
+        </div>
+
+        <div class="terminal">
+            <h2 style="color: #f0f; margin-bottom: 1rem;">The Real Deal:</h2>
+            <div class="terminal-text">
+                <p>Agave was created as a response to Honey's sketchy practices. We're the <span class="highlight">anti-Honey</span>:</p>
+                <br>
+                <p>✅ We support creators (not steal from them)</p>
+                <p>✅ We're transparent (open source FTW)</p>
+                <p>✅ We respect your privacy (no data collection)</p>
+                <p>✅ We don't sell out (no secret investors)</p>
+                <br>
+                <p style="color: #0ff;">TL;DR: We're the good guys. Promise. 🌿</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; color: #ff0; font-size: 1.5rem; margin: 2rem 0;">
+            <p>Still don't believe us? Check our code:</p>
+            <p style="margin-top: 1rem;">
+                <a href="https://github.com/carelesshangman/agave" target="_blank"
+                   style="color: #0f0; text-decoration: underline;">github.com/carelesshangman/agave</a>
+            </p>
+        </div>
+
+        <div class="footer-link">
+            <a href="index.html" class="back-link">← Return to Safety</a>
+        </div>
+
+        <div style="text-align: center; color: #0f0; margin: 2rem 0; font-size: 0.9rem;">
+            <p>Made with 🌿 and terrible humor</p>
+            <p style="margin-top: 0.5rem; color: #0ff;">P.S. - Thanks for clicking the logo. You found the easter egg! 🥚</p>
+        </div>
+    </div>
+
+    <script>
+        // Matrix rain effect
+        const canvas = document.getElementById('matrix');
+        const ctx = canvas.getContext('2d');
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const columns = Math.floor(canvas.width / 20);
+        const drops = Array(columns).fill(1);
+
+        function drawMatrix() {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = '#0f0';
+            ctx.font = '15px monospace';
+
+            for (let i = 0; i < drops.length; i++) {
+                const text = String.fromCharCode(0x30A0 + Math.random() * 96);
+                ctx.fillText(text, i * 20, drops[i] * 20);
+
+                if (drops[i] * 20 > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+
+        setInterval(drawMatrix, 33);
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+</body>
+</html>
+
